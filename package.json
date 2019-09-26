@@ -1,0 +1,32 @@
+{
+  "name": "zmpack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./out/index.js",
+  "scripts": {
+    "prepack": "tsc --sourceMap false",
+    "prestart": "tsc",
+    "start": "node ./out/index.js"
+  },
+  "bin": {
+    "zmpack": "./bin/zmpack"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "files": [
+    "out/",
+    "log4js.config.json"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "dependencies": {
+    "archiver": "^3.1.1",
+    "log4js": "^5.1.0",
+    "yargs": "^14.0.0"
+  },
+  "devDependencies": {
+    "@types/archiver": "^3.0.0"
+  }
+}

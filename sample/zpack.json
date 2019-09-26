@@ -1,0 +1,22 @@
+{
+  "name": "my-great-project",
+  "targetPath": "~/Desktop",
+  "copyBefore": [
+    ["delete", "out/"],
+    ["command", "tsc --sourceMap false"]
+  ],
+  "copyAfter": [
+    ["delete", "out/"]
+  ],
+  "files": [
+    "out/",
+    "package.json",
+    "package-lock.json"
+  ],
+  "packBefore": [
+    ["command", "npm install --production"]
+  ],
+  "packAfter": [
+
+  ]
+}

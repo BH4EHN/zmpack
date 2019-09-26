@@ -1,0 +1,19 @@
+{
+  "appenders": {
+    "out": {
+      "type": "console",
+      "layout": {
+        "type": "pattern",
+        "pattern": "%[[%d{ISO8601}][%5p] %10c -> %m%]"
+      }
+    }
+  },
+  "categories": {
+    "default": {
+      "appenders": [
+        "out"
+      ],
+      "level": "trace"
+    }
+  }
+}
