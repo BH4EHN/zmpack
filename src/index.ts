@@ -15,7 +15,7 @@ const fsMkdir = Util.promisify(FS.mkdir);
 const fsReaddir = Util.promisify(FS.readdir);
 const childProcessExec = Util.promisify(ChildProcess.exec);
 
-const configFileName = 'zpack.json';
+const configFileName = 'zmpack.json';
 const workingPath = process.cwd();
 
 Log4js.configure(Path.join(__dirname, '../log4js.config.json'));
@@ -39,7 +39,7 @@ async function readConfig(configName: string): Promise<Configuration> {
     const configFilePath = Path.join(workingPath, configName);
     const isConfigExists = await fsExist(configFilePath);
     if (!isConfigExists) {
-        throw new Error('"zpack.json" is required');
+        throw new Error('"zmpack.json" is required');
     }
     const configJson = await fsReadFile(configFilePath, { encoding: 'utf8' });
     const config = <Configuration>JSON.parse(configJson);

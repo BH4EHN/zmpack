@@ -1,7 +1,7 @@
 {
   "name": "zmpack",
   "version": "1.0.0",
-  "description": "",
+  "description": "simple customizable tool helps pack project to zip",
   "main": "./out/index.js",
   "scripts": {
     "prepack": "tsc --sourceMap false",
@@ -11,10 +11,15 @@
   "bin": {
     "zmpack": "./bin/zmpack"
   },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/npm/cli.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "BH4EHN <edyuy@zmyseries.com>",
   "license": "ISC",
   "files": [
+    "bin/",
     "out/",
     "log4js.config.json"
   ],
