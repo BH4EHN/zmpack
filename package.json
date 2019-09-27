@@ -1,6 +1,6 @@
 {
   "name": "zmpack",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "simple customizable tool helps pack project to zip",
   "main": "./out/index.js",
   "scripts": {
@@ -13,7 +13,7 @@
   },
   "repository": {
     "type" : "git",
-    "url" : "https://github.com/npm/cli.git"
+    "url" : "https://github.com/BH4EHN/zmpack"
   },
   "keywords": [],
   "author": "BH4EHN <edyuy@zmyseries.com>",
